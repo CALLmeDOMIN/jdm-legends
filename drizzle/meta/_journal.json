@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1699486612552,
+      "tag": "0000_smooth_devos",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1699486855646,
+      "tag": "0001_woozy_naoko",
+      "breakpoints": true
+    }
+  ]
+}
