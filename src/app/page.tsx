@@ -1,7 +1,11 @@
 import Product from "@/components/Product";
 import Image from "next/image";
+import { db } from "../../db/simple-connect";
+import { products, type ProductType } from "../../db/schema";
 
-const HomePage = () => {
+const HomePage = async () => {
+	const data: ProductType[] = await db.select().from(products);
+
 	return (
 		<>
 			<main className="p-4">
@@ -22,9 +26,8 @@ const HomePage = () => {
 				<p className="mb-2 text-center text-gray-300">
 					Find gadgets that feet you the most
 				</p>
-				<Product />
-				<Product />
-				<Product />
+
+				<Product {...data[0]} />
 			</section>
 		</>
 	);

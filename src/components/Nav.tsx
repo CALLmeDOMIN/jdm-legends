@@ -71,7 +71,7 @@ const Nav = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<header className="z-50 bg-primary-foreground sticky top-0 flex w-full items-center border-b p-4 px-6">
+		<header className="z-50 bg-background sticky top-0 flex w-full items-center border-b p-4 px-6">
 			<div className="mr-6 h-4 w-4 bg-red-600" />
 			<div className="grow lg:hidden" />
 
@@ -119,7 +119,7 @@ const Nav = () => {
 						<span className="sr-only">Toggle Menu</span>
 					</button>
 				</SheetTrigger>
-				<SheetContent side="right">
+				<SheetContent>
 					<ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
 						<div className="pl-1 pr-7">
 							<Accordion
