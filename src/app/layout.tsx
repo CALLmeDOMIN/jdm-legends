@@ -1,37 +1,37 @@
-import Nav from "@/components/Nav";
-import { cn } from "@/lib/utils";
+import Nav from "@/components/Nav"
+import { cn } from "@/lib/utils"
 
-import "./globals.css";
+import "../globals.css"
 
-import { Inter as FontSans } from "next/font/google";
+import { Inter as FontSans } from "next/font/google"
 
 export const fontSans = FontSans({
-	subsets: ["latin"],
-	variable: "--font-sans",
-});
+  subsets: ["latin"],
+  variable: "--font-sans",
+})
 
 export const metadata = {
-	title: "JDM Legends",
-	description: "JDM Legends Merch & Gear",
-	icons: [{ rel: "icon", url: "/favicon.ico" }],
-};
+  title: "JDM Legends",
+  description: "JDM Legends Merch & Gear",
+  icons: [{ rel: "icon", url: "/favicon.ico" }],
+}
 
 export default function RootLayout({
-	children,
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode
 }) {
-	return (
-		<html lang="en">
-			<body
-				className={cn(
-					"dark min-h-screen bg-background font-sans antialiased ",
-					fontSans.variable
-				)}
-			>
-				<Nav />
-				{children}
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body
+        className={cn(
+          "dark min-h-screen bg-background font-sans antialiased ",
+          fontSans.variable,
+        )}
+      >
+        <Nav />
+        {children}
+      </body>
+    </html>
+  )
 }
