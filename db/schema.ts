@@ -2,7 +2,7 @@ import { serial, text, pgTableCreator, pgSchema, integer, pgEnum, uniqueIndex } 
 
 export const mySchema = pgSchema('e-commerce');
 
-export const productTypeEnum = pgEnum('product_type', ['sticker', 'shirt', 'mug', 'keychain'])
+export const productTypeEnum = pgEnum('product_type', ['sticker', 'tshirt', 'mug', 'keychain', 'canvas', 'decal'])
 
 const pgTable = pgTableCreator((name) => `jdm-legends_${name}`);
 

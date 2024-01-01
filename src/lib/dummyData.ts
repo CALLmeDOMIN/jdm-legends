@@ -16,7 +16,7 @@ export const data: ProductType[] = [
     name: "RX-7 Rotary Keychain",
     price: 20,
     desc: "",
-    imageURL: "rotaryKeychain.png",
+    imageURL: "rotaryKeychain.webp",
     quantity: 15,
     type: "keychain",
   },
@@ -58,7 +58,7 @@ export const data: ProductType[] = [
   },
   {
     id: 7,
-    name: "JDM Icon Decals",
+    name: "JDM Icons Decals",
     price: 8,
     desc: "",
     imageURL: "iconDecals.png",

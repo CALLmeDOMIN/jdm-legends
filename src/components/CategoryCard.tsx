@@ -3,6 +3,15 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Image from "next/image"
 import Link from "next/link"
 
+const titles: { [key: string]: string } = {
+  tshirt: "T-shirts",
+  keychain: "Keychains",
+  canvas: "Canvases",
+  mug: "Mugs",
+  sticker: "Stickers",
+  decal: "Decals",
+}
+
 const CategoryCard = ({ category }: { category: string }) => {
   return (
     <Link href={`/`}>
@@ -21,7 +30,7 @@ const CategoryCard = ({ category }: { category: string }) => {
         </CardHeader>
         <CardContent className="p-4">
           <CardTitle>
-            {category[0].toUpperCase() + category.slice(1) + "s"}
+            {titles[category] ? titles[category] : category}
           </CardTitle>
         </CardContent>
       </Card>
