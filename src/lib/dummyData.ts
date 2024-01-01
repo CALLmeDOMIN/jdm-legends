@@ -1,0 +1,68 @@
+import { type ProductType } from "../../db/schema"
+
+export const data: ProductType[] = [
+  {
+    //rating
+    id: 1,
+    name: "Toyota Supra Keychain",
+    price: 20,
+    desc: "Supra Keychain",
+    imageURL: "supraKeychain.webp",
+    quantity: 20,
+    type: "keychain",
+  },
+  {
+    id: 2,
+    name: "RX-7 Rotary Keychain",
+    price: 20,
+    desc: "",
+    imageURL: "rotaryKeychain.png",
+    quantity: 15,
+    type: "keychain",
+  },
+  {
+    id: 3,
+    name: "JDM Coffee Mug",
+    price: 30,
+    desc: "",
+    imageURL: "coffeeMug.png",
+    quantity: 10,
+    type: "mug",
+  },
+  {
+    id: 4,
+    name: "Initial D Sticker Pack",
+    price: 5,
+    desc: "",
+    imageURL: "initialDSticker.png",
+    quantity: 100,
+    type: "sticker",
+  },
+  {
+    id: 5,
+    name: "R34 Skyline Wall Art",
+    price: 30,
+    desc: "",
+    imageURL: "r34Canvas.png",
+    quantity: 5,
+    type: "canvas",
+  },
+  {
+    id: 6,
+    name: "Supra Skyline Tee",
+    price: 30,
+    desc: "",
+    imageURL: "supraSkylineTee.png",
+    quantity: 15,
+    type: "tshirt",
+  },
+  {
+    id: 7,
+    name: "JDM Icon Decals",
+    price: 8,
+    desc: "",
+    imageURL: "iconDecals.png",
+    quantity: 150,
+    type: "decal",
+  },
+]
