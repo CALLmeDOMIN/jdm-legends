@@ -12,10 +12,10 @@ import Image from "next/image"
 import { type ProductType } from "../../db/schema"
 import Link from "next/link"
 
-const Product = (product: ProductType) => {
+const ProductCard = (product: ProductType) => {
   return (
     <Link href={`/products/${product.id}`}>
-      <Card className="my-2 h-full max-w-[280px] overflow-hidden rounded-md">
+      <Card className="h-full max-w-[280px] rounded-md">
         <CardHeader className="relative min-h-[300px] overflow-hidden p-4">
           <Image
             src={`/${product.imageURL}`}
@@ -30,7 +30,7 @@ const Product = (product: ProductType) => {
           <CardTitle>{product.name}</CardTitle>
           <CardDescription>{product.price}</CardDescription>
         </CardContent>
-        <CardFooter className="pb-0">
+        <CardFooter className="pb-3">
           <Button>Add to cart</Button>
         </CardFooter>
       </Card>
@@ -38,4 +38,4 @@ const Product = (product: ProductType) => {
   )
 }
 
-export default Product
+export default ProductCard

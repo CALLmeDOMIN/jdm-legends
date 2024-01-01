@@ -7,19 +7,18 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import ProductCard from "@/components/ProductCard"
-import { type ProductType } from "../../db/schema"
+import CategoryCard from "@/components/CategoryCard"
 
-const ProductCarousel = ({ products }: { products: ProductType[] }) => {
+const CategoryCarousel = ({ categories }: { categories: string[] }) => {
   return (
     <Carousel className="mx-auto w-full max-w-[280px] md:max-w-xl lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl">
       <CarouselContent>
-        {products.map((product) => (
+        {categories.map((category) => (
           <CarouselItem
             className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4"
-            key={product.id}
+            key={category}
           >
-            <ProductCard {...product} />
+            <CategoryCard category={category} />
           </CarouselItem>
         ))}
       </CarouselContent>
@@ -29,4 +28,4 @@ const ProductCarousel = ({ products }: { products: ProductType[] }) => {
   )
 }
 
-export default ProductCarousel
+export default CategoryCarousel

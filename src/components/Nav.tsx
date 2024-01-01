@@ -103,7 +103,7 @@ const Nav = () => {
         <IconShoppingCart size={18} />
       </button>
 
-      <Sheet open={isOpen} onOpenChange={setIsOpen} side="right">
+      <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
           <button
             className="z-20 ml-4 lg:hidden"
